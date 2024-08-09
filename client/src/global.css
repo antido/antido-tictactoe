@@ -1,0 +1,23 @@
+/* NAVIGATION STYLE */
+.nav-links {
+    text-decoration: none;
+}
+/* END NAVIGATION STYLE */
+
+/* HOME PAGE STYLE */
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* END HOME PAGE STYLE */
+
+/* FOOTER STYLE */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* END FOOTER STYLE */
