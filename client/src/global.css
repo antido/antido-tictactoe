@@ -5,7 +5,8 @@
 /* END NAVIGATION STYLE */
 
 /* HOME PAGE STYLE */
-.main-container {
+.main-container,
+.not-found-page {
     position: absolute;
     top: 50%;
     left: 50%;

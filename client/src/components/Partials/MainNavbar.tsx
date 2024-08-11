@@ -29,7 +29,7 @@ const MainNavbar = () => {
                             className={(location.pathname != "/logs") ? "text-light nav-links" : "text-light nav-links active"}
                             to="/logs"
                         >
-                            Logs
+                            Game Logs
                         </Link>
                     </NavItem>
                 </Nav>
