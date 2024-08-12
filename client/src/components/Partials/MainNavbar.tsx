@@ -13,7 +13,7 @@ const MainNavbar = () => {
         <div className="navbar-desktop">
             <Navbar className="py-3" id="navbarMain" color="dark" dark>
                 <Link to="/" className="text-light nav-links">
-                    TicTacToe
+                    Tic-Tac-Toe
                 </Link>
                 <Nav className="main-navigation">
                     <NavItem className="px-3">
