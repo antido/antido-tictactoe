@@ -18,7 +18,7 @@ app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-//serving public file
+// Serving public file
 app.use(express.static(__dirname))
 
 // DB Connection

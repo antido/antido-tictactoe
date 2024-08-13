@@ -53,6 +53,7 @@ const Board = () => {
                 if (squares[i].textContent !== '') {
                     return;
                 }
+
                 squares[i].textContent = currentPlayer;
 
                 if (checkWin(currentPlayer)) {
@@ -70,6 +71,8 @@ const Board = () => {
                         viewPromptModal();
                     }, 500);
 
+                    currentPlayer = players[0].type;
+
                     return;
                 }
 
@@ -83,6 +86,7 @@ const Board = () => {
 
                     return;
                 }
+
                 currentPlayer = (currentPlayer === players[0].type) ? players[1].type : players[0].type;
 
                 if (currentPlayer == players[0].type) {
@@ -137,7 +141,8 @@ const Board = () => {
 
     // Stop Game And Return Home
     const stopGame = () => {
-        navigate("/");
+        const gameData = [{ player1: players[0].name, score: player1Win }, { player2: players[1].name, score: player2Win }];
+        navigate("/", { state: { gameData: gameData }});
     }
 
     return (

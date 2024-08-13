@@ -8,13 +8,18 @@ import {
     FormGroup,
     Input
 } from 'reactstrap';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { IPlayers } from '../Interface/GlobalInterface';
 
 const Home = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+
+    if (location.state !== null) {
+        let gameData = location.state.gameData;
+    }
 
     const [players, setPlayers] = useState<IPlayers[]>([]);
     const [addModal, setAddModal] = useState<boolean>(false);
