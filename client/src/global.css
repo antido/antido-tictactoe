@@ -45,7 +45,7 @@
     background-color: #FFFFE0;
 }
 
-#restartButton {
+#newGameBtn {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -57,9 +57,17 @@
     font-size: 18px;
 }
 
-#restartButton:hover {
+#newGameBtn:hover {
     background-color: #000000;
     color: #FFFFFF;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+}
+
+.not-allowed > div {
+    pointer-events: none;
 }
 /* END TIC-TAC-TOE BOARD STYLE */
 

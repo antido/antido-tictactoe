@@ -42,7 +42,7 @@ const Home = () => {
         } else if (player2.value === "") {
             toast.error("Player 2 name is required.");
         } else {
-            navigate("/board");
+            navigate("/board", { state: { players: players }});
         }
     }
 
@@ -88,8 +88,9 @@ const Home = () => {
                         {' '}
                         <Button
                             color="primary"
-                            type="submit">
-                            START
+                            type="submit"
+                        >
+                            Start
                         </Button>
                     </Form>
                 </ModalBody>
